@@ -9,5 +9,5 @@ Here is an example of a result of data augmentation for a brain tumor images.
 - Creating training and validations dirs using os path and mkdirs then split the data using a function takes source directory and training and validation directories and split size as parameters
 - Making train and validation generators using ImageDataGenerator
 # Modeling 
-- Buit convolutional neural network (CNN) architecture using TensorFlow/Keras for image classification tasks.
+- Buit convolutional neural network (CNN) architecture using TensorFlow/Keras for image classification tasks. It consists of three convolutional layers followed by max pooling for feature extraction, then flattens the output for dense layers. Dropout is applied for regularization, and a sigmoid activation function is used in the output layer for binary classification. The model is compiled with Adam optimizer, binary crossentropy loss, and accuracy metrics.
 - pre-trained InceptionV3 model for transfer learning in TensorFlow/Keras. It loads weights from a specified file (local_weights_file) and freezes all layers to prevent further training. The model is configured to exclude the top classification layers (include_top=False) and expects input images of size 150x150 pixels with 3 channels (RGB).
